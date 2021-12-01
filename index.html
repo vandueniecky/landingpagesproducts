@@ -23,18 +23,18 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto fw-bold">
+      <ul class="navbar-nav ms-auto fw-bold text-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          <a class="nav-link scroll-trigger active" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#about">About Us</a>
+          <a class="nav-link scroll-trigger active" href="#about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#products">Products</a>
+          <a class="nav-link scroll-trigger active" href="#products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#pricing">Pricing</a>
+          <a class="nav-link scroll-trigger active" href="#pricing">Pricing</a>
         </li>
       </ul>
     </div>
@@ -122,9 +122,9 @@
       </div>
     </div>
   </div>
+    
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e20613" fill-opacity="1" d="M0,192L48,202.7C96,213,192,235,288,240C384,245,480,235,576,229.3C672,224,768,224,864,224C960,224,1056,224,1152,229.3C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e20613" fill-opacity="1" d="M0,192L48,202.7C96,213,192,235,288,240C384,245,480,235,576,229.3C672,224,768,224,864,224C960,224,1056,224,1152,229.3C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
 <footer class="footer text-end">
   <form id="form" class="form" action="https://www.youtube.com/channel/UCetVBycG300ofGqw9iLg5aw?sub_confirmation=1">
@@ -144,11 +144,21 @@
 </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <!-- GSAP Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/TextPlugin.min.js"></script>
     <script>
+        // Click trigger nav-bar
+        $('.scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+        });
+
         gsap.registerPlugin(TextPlugin);
         gsap.from('nav', {duration:1.5, y: '-100%', opacity:0, ease: "bounce"});
         gsap.to('.paragraf', {duration:2, delay:3, text: 'Indonesian Instant Noodles' });
