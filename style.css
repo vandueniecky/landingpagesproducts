@@ -1,0 +1,87 @@
+/* Font Google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap");
+/* Akhir Font */
+
+body {
+  font-family: 'Roboto';
+}
+.navbar {
+  background: #E20613;
+}
+.navbar-nav a {
+  font-size: 24px;
+  margin: 18px 0px 0px 10px ;
+  color: #009ee2 !important;
+}
+.navbar-nav a:hover {
+  color: white !important;
+  transform: scale(1.2);
+}
+.jumbotron {
+    padding-top: 6rem;
+    background-color:#d3d3d3;
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/24/18/05/background-3104413__340.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -100px;
+    overflow: hidden;
+    min-height: 100%;
+}
+.jumbotron img.dunia {
+  position: absolute;
+  z-index: 1;
+}
+.jumbotron img.latar {
+  z-index: -9;
+}
+.jumbotron .paragraf {
+  margin-top: 25px;
+}
+#title {
+  color: #009ee2;
+  font-weight: 900;
+}
+
+.about{
+  padding-top: 6rem;
+}
+.pricing{
+  padding-top: 6rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #E20613;
+  color: white;
+  margin: 0;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.form {
+  padding: 2px 200px 0px 0px;
+}
+.btn {
+  color: #cc0000 !important;
+  background-color: rgb(255,255,255)!important;
+  font-weight: bold !important;
+}
+.btn i {
+  color: #cc0000;
+}
+.btn:hover {
+  background-color: rgb(200, 200, 200) !important;
+}
+.btn:hover i {
+  visibility: visible;
+}
+
+.footer .sumber {
+  color: white;
+  text-decoration:none;
+}
+
+.footer p a:hover {
+  transform: scale(1.2);
+}
+
+/* Akhir Footer */
