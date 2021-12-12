@@ -19,8 +19,10 @@
     <a class="navbar-brand" href="#">
       <img id="header-img" src="https://www.indomie.com/img/icon/logo-indomie.png" alt="" max-width="100%" height="auto" width="200px" class="d-inline-block align-text-top position-absolute top-0 start-0"></a>
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="a"></span>
+      <span class="b"></span>
+      <span class="c"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fw-bold text-center">
@@ -45,8 +47,8 @@
 <!-- Jumbotron -->
 <section id="home">
   <div class="jumbotron text-center">
-		<img src="https://www.indomie.com/uploads/slider/image-2_021732830.png" alt="" width="400" max-width="100%" class="dunia">
-    <img src="https://www.indomie.com/uploads/slider/image-1_231051421.png" alt="" width="400" max-width="100%" class="latar">
+		<img src="https://www.indomie.com/uploads/slider/image-2_021732830.png" alt="" width="400" max-width="100%" class="dunia img-fluid">
+    <img src="https://www.indomie.com/uploads/slider/image-1_231051421.png" alt="" width="400" max-width="100%" class="latar img-fluid">
 		<h1 class="paragraf fw-bold text-white"></h1>
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,261.3C384,235,480,181,576,170.7C672,160,768,192,864,208C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   </div>
@@ -73,7 +75,7 @@
     <h2 class="text-white">"Indomie Seleraku"</h2>
     <iframe
         id="video"
-        width="500"
+        width="auto"
         max-width="100%"
         height="315"
         src="https://www.youtube-nocookie.com/embed/OhJ6p8pkPk4?rel=0&amp;controls=0&amp;showinfo=0"
@@ -87,33 +89,33 @@
 
 <section class="pricing" id="pricing">
   <div class="container">
-    <div class="row">
-      <div class="col mb-4">
+    <div class="row justify-content-center">
+      <div class="col mb-4 text-center">
         <h1 id="title">Pricing</h1>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <img src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special_thumb_094906798.png" class="card-img-top" alt="">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img class="img-fluid" src="https://www.indomie.com/uploads/product/indomie-mi-goreng-special_thumb_094906798.png" class="card-img-top" alt="">
           <div class="card-body">
             <h4 class="card-title text-center">Mi Goreng Original</h4>
             <p>1dus/40pcs harga: Rp94.500,00</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <img src="https://www.indomie.com/uploads/product/indomie-special-chicken-flavour_thumb_172805424.png" class="card-img-top" alt="">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img class="img-fluid" src="https://www.indomie.com/uploads/product/indomie-special-chicken-flavour_thumb_172805424.png" class="card-img-top" alt="">
           <div class="card-body">
             <h4 class="card-title text-center">Mi Kuah Rasa Ayam</h4>
             <p>1dus/40pcs harga: Rp94.500,00</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card" style="width: 18rem;">
-          <img src="https://www.indomie.com/uploads/product/indomie-mi-goreng-hot-spicy_thumb_113950389.png" class="card-img-top" alt="">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img class="img-fluid" src="https://www.indomie.com/uploads/product/indomie-mi-goreng-hot-spicy_thumb_113950389.png" class="card-img-top" alt="">
           <div class="card-body">
             <h4 class="card-title text-center">Mi Goreng Hot & Spicy</h4>
             <p>1dus/40pcs harga: Rp99.700,00</p>
@@ -134,7 +136,7 @@
         name="email"
         id="email"
         type="email"
-        placeholder="Enter your email address"
+        placeholder="Enter your email"
         required />
      </div>
     <a href="https://www.youtube.com/channel/UCetVBycG300ofGqw9iLg5aw?sub_confirmation=1"><input id="submit" type="submit" class="btn mb-4"/></a>
@@ -143,7 +145,7 @@
   <p class="text-center">&copy 2021. Created by Van Due Niecky</p>
 </footer>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
     <!-- Jquery -->
     <script src="js/jquery-3.6.0.min.js"></script>
